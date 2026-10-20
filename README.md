@@ -76,12 +76,27 @@
 | 负向写 `no flat colour blocks` 之类 | 无效 | CFG-distilled 模型整条链路没有负向分支 |
 | 一次改多个参数找「最优解」 | 无法归因 | 画风、身份、构图互相干扰 |
 
+## 文档
+
+| 文档 | 内容 |
+| --- | --- |
+| [`docs/experiment-log.md`](docs/experiment-log.md) | 实验记录索引：做过什么、参数、结论、待复跑清单 |
+| [`docs/material-and-lighting.md`](docs/material-and-lighting.md) | 材质与光影拆解（皮肤三层、五种高光、青橙） |
+| [`docs/krea2-prompting.md`](docs/krea2-prompting.md) | Krea 2 提示词规范与六条提质量路线 |
+| [`docs/krea2-style-tuning.md`](docs/krea2-style-tuning.md) | 画风调校七个方向与三渲二开关 |
+| [`docs/krea2-identity-edit.md`](docs/krea2-identity-edit.md) | Identity Edit 实测与边界 |
+| [`docs/character-consistency.md`](docs/character-consistency.md) | 角色一致性方案排名、显存账、链路口径 |
+| [`docs/model-landscape.md`](docs/model-landscape.md) | 16 GB 模型选型与许可 |
+| [`docs/community-notes.md`](docs/community-notes.md) | 写实二次元社区做法汇编（带冲突点） |
+| [`docs/lora-training.md`](docs/lora-training.md) | 角色 LoRA 数据集、配置与验收 |
 ## 工具
 
 | 文件 | 作用 |
 | --- | --- |
 | `tools/comfygen.py` | ComfyUI 命令行入口（多底模族、批量、LoRA、hires fix、img2img、ESRGAN） |
 | `tools/promptbox.py` | 基于角色档案与场景池的提示词随机生成，用于打破模板化输出 |
+| `tools/anima_material_probe.py` | 同 seed 材质对照（基线 vs 细节 LoRA 堆叠） |
+| `tools/krea2_style_ref.py` | style reference 多参考图对照，同 prompt 同 seed |
 
 ## 许可
 
